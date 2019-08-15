@@ -1,8 +1,6 @@
 # b7a-grpc-nats
 
-This project consists of the initial attempt to write https://medium
-.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb
--983f650452aa in Ballerina.
+This project consists of the initial attempt to write a part of https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-983f650452aa in Ballerina.
 
 ### How to run
 

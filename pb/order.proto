@@ -1,0 +1,27 @@
+// Modified from
+// https://github.com/shijuvar/go-distributed-sys/blob/0ea8f75ab525a25eb87079b966576652d2a53fe6/pb/order .proto
+syntax = "proto3";
+package pb;
+
+message OrderItem {
+    string code = 1;
+    string name = 2;
+    float unit_price = 3;
+    int32 quantity = 4;
+}
+
+message OrderCreateCommand {
+    string order_id = 1;
+    string customer_id = 2;
+    string status = 3;
+    int64 created_on = 4; // Date stores as unix int64 value
+    string restaurant_id = 5;
+    float amount = 6;
+    repeated OrderItem order_items = 7;
+}
+
+message OrderPaymentDebitedCommand {
+    string order_id = 1;
+    string customer_id = 2;
+    float amount = 3;
+}
